@@ -1,0 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&display=swap");
+
+body {
+  background-color: #1e293b; /* This is the Tailwind CSS color for bg-slate-800 */
+  font-family: "Fira Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
