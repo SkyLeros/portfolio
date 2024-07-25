@@ -9,14 +9,8 @@ import { Icon } from "@iconify/vue";
 </script>
 
 <template>
-  <div class="mb-10 flex justify-center">
-    <div class="text-center">
-      <h1 class="text-4xl font-bold text-white md:text-6xl">Skills</h1>
-    </div>
-  </div>
-
   <div
-    class="grid grid-cols-1 gap-4 p-4 mx-4 text-white sm:grid-cols-2 sm:mx-6 md:grid-cols-3 md:mx-10 lg:mx-20 lg:gap-6 lg:p-8"
+    class="grid grid-cols-1 gap-4 p-4 mx-4 text-white sm:grid-cols-2 sm:mx-6 md:grid-cols-3 md:mx-10 lg:mx-20 lg:gap-6 "
   >
     <TooltipProvider class="flex items-center justify-center">
       <Tooltip>

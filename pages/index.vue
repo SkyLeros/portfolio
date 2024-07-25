@@ -1,4 +1,6 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { Icon } from "@iconify/vue";
+</script>
 
 <template>
   <div class="mx-12 my-5 flex flex-col text-white md:flex-row">
@@ -8,7 +10,9 @@
         Hello, I'm <br /><span class="text-blue-500">Than Ye Hong</span>
       </h1>
       <p class="text-lg">Brief description of myself goes here...</p>
-      <Button variant="outline" class="my-4"> Download CV </Button>
+      <Button variant="outline" class="my-4">
+        <Icon icon="ic:sharp-download" />Download CV
+      </Button>
     </div>
     <div class="my-5 flex-1 md:my-0 md:ml-auto">
       <img
