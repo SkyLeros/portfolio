@@ -51,7 +51,7 @@ const items = ref([
   <div class="grid grid-cols-3 gap-[30px] text-white">
     <TooltipProvider>
       <Tooltip>
-        <TooltipTrigger>Javascript</TooltipTrigger>
+        <TooltipTrigger><Icon icon="akar-icons:javascript-fill" /></TooltipTrigger>
         <TooltipContent>
           <p>Javascript</p>
         </TooltipContent>
@@ -59,7 +59,7 @@ const items = ref([
     </TooltipProvider>
     <TooltipProvider>
       <Tooltip>
-        <TooltipTrigger><Icon icon="fa6-brands:vuejs"></Icon></TooltipTrigger>
+        <TooltipTrigger><Icon icon="fa6-brands:vuejs" /></TooltipTrigger>
         <TooltipContent>
           <p>Vue Js</p>
         </TooltipContent>
@@ -67,7 +67,7 @@ const items = ref([
     </TooltipProvider>
     <TooltipProvider>
       <Tooltip>
-        <TooltipTrigger>Nuxt Js</TooltipTrigger>
+        <TooltipTrigger><Icon icon="tabler:brand-nuxt" /></TooltipTrigger>
         <TooltipContent>
           <p>Nuxt Js</p>
         </TooltipContent>
@@ -77,7 +77,7 @@ const items = ref([
   <div class="grid grid-cols-3 gap-[30px] text-white">
     <TooltipProvider>
       <Tooltip>
-        <TooltipTrigger>Tailwind CSS</TooltipTrigger>
+        <TooltipTrigger><Icon icon="ri:tailwind-css-fill" /></TooltipTrigger>
         <TooltipContent>
           <p>Tailwind CSS</p>
         </TooltipContent>
@@ -85,7 +85,7 @@ const items = ref([
     </TooltipProvider>
     <TooltipProvider>
       <Tooltip>
-        <TooltipTrigger>PHP</TooltipTrigger>
+        <TooltipTrigger><Icon icon="material-symbols:php-sharp" /></TooltipTrigger>
         <TooltipContent>
           <p>PHP</p>
         </TooltipContent>
@@ -93,7 +93,7 @@ const items = ref([
     </TooltipProvider>
     <TooltipProvider>
       <Tooltip>
-        <TooltipTrigger>Laravel</TooltipTrigger>
+        <TooltipTrigger><Icon icon="simple-icons:laravel" /></TooltipTrigger>
         <TooltipContent>
           <p>Laravel</p>
         </TooltipContent>
