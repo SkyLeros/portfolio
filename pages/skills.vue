@@ -6,96 +6,109 @@ import {
   TooltipTrigger,
 } from "@/components/ui/tooltip";
 import { Icon } from "@iconify/vue";
-
-const items = ref([
-  {
-    title: "Javascript",
-    description: "Javascript",
-    icon: " akar-icons:javascript-fill",
-  },
-  {
-    title: "Vue Js",
-    description: "Vue Js",
-    icon: "nonicons:vue-16",
-  },
-  {
-    title: "Nuxt Js",
-    description: "Nuxt Js",
-    icon: "tabler:brand-nuxt",
-  },
-  {
-    title: "PHP",
-    description: "PHP",
-    icon: "material-symbols:php-sharp",
-  },
-  {
-    title: "Laravel",
-    description: "Laravel",
-    icon: "simple-icons:laravel",
-  },
-  {
-    title: "Tailwind CSS",
-    description: "Tailwind CSS",
-    icon: "ri:tailwind-css-fill",
-  },
-]);
 </script>
 
 <template>
   <div class="mb-10 flex pt-10">
     <div class="mx-auto">
       <h1 class="text-6xl font-bold text-white">Skills</h1>
-      <iconify-icon icon="ri:tailwind-css-fill"></iconify-icon>
     </div>
   </div>
-  <div class="grid grid-cols-3 gap-[30px] text-white">
-    <TooltipProvider>
+
+  <div class="grid grid-cols-3 gap-[30px] text-white basis-1/2">
+    <TooltipProvider class="flex items-center justify-center bg-slate-400">
       <Tooltip>
-        <TooltipTrigger><Icon icon="akar-icons:javascript-fill" /></TooltipTrigger>
+        <TooltipTrigger
+          ><Icon icon="akar-icons:javascript-fill" class="h-24 w-16 mx-auto"
+        />Javascript</TooltipTrigger>
         <TooltipContent>
           <p>Javascript</p>
         </TooltipContent>
       </Tooltip>
     </TooltipProvider>
-    <TooltipProvider>
+    <TooltipProvider class="flex items-center justify-center">
       <Tooltip>
-        <TooltipTrigger><Icon icon="fa6-brands:vuejs" /></TooltipTrigger>
+        <TooltipTrigger
+          ><Icon icon="fa6-brands:vuejs" class="h-24 w-16 mx-auto"
+        />Vue Js</TooltipTrigger>
         <TooltipContent>
           <p>Vue Js</p>
         </TooltipContent>
       </Tooltip>
     </TooltipProvider>
-    <TooltipProvider>
+    <TooltipProvider class="flex items-center justify-center">
       <Tooltip>
-        <TooltipTrigger><Icon icon="tabler:brand-nuxt" /></TooltipTrigger>
+        <TooltipTrigger
+          ><Icon icon="tabler:brand-nuxt" class="h-24 w-16 mx-auto"
+        />Nuxt Js</TooltipTrigger>
         <TooltipContent>
           <p>Nuxt Js</p>
         </TooltipContent>
       </Tooltip>
     </TooltipProvider>
   </div>
-  <div class="grid grid-cols-3 gap-[30px] text-white">
-    <TooltipProvider>
+
+  <div class="my-10 grid grid-cols-3 gap-[30px] text-white">
+    <TooltipProvider class="flex items-center justify-center">
       <Tooltip>
-        <TooltipTrigger><Icon icon="ri:tailwind-css-fill" /></TooltipTrigger>
+        <TooltipTrigger
+          ><Icon icon="ri:tailwind-css-fill" class="h-24 w-16 mx-auto"
+        />Tailwind CSS</TooltipTrigger>
         <TooltipContent>
           <p>Tailwind CSS</p>
         </TooltipContent>
       </Tooltip>
     </TooltipProvider>
-    <TooltipProvider>
+    <TooltipProvider class="flex items-center justify-center">
       <Tooltip>
-        <TooltipTrigger><Icon icon="material-symbols:php-sharp" /></TooltipTrigger>
+        <TooltipTrigger
+          ><Icon icon="material-symbols:php-sharp" class="h-24 w-16 mx-auto"
+        />PHP</TooltipTrigger>
         <TooltipContent>
           <p>PHP</p>
         </TooltipContent>
       </Tooltip>
     </TooltipProvider>
-    <TooltipProvider>
+    <TooltipProvider class="flex items-center justify-center">
       <Tooltip>
-        <TooltipTrigger><Icon icon="simple-icons:laravel" /></TooltipTrigger>
+        <TooltipTrigger
+          ><Icon icon="simple-icons:laravel" class="h-24 w-16 mx-auto"
+        />Laravel</TooltipTrigger>
         <TooltipContent>
           <p>Laravel</p>
+        </TooltipContent>
+      </Tooltip>
+    </TooltipProvider>
+  </div>
+  
+  <div class="my-10 grid grid-cols-3 gap-[30px] text-white">
+    <TooltipProvider class="flex items-center justify-center">
+      <Tooltip>
+        <TooltipTrigger
+          ><Icon icon="file-icons:sqlite" class="h-24 w-16 mx-auto"
+        />SQLite</TooltipTrigger>
+        <TooltipContent>
+          <p>SQLite</p>
+        </TooltipContent>
+      </Tooltip>
+    </TooltipProvider>
+    <TooltipProvider class="flex items-center justify-center">
+      <Tooltip>
+        <TooltipTrigger
+          ><Icon icon="gg:figma" class="h-24 w-16 mx-auto"
+        />Figma</TooltipTrigger>
+        <TooltipContent>
+          <p>Figma</p>
+        </TooltipContent>
+      </Tooltip>
+    </TooltipProvider>
+    <TooltipProvider class="flex items-center justify-center">
+      <Tooltip>
+        <TooltipTrigger
+          ><Icon icon="bi:git" class="h-24 w-16 mx-auto"
+        />Git</TooltipTrigger>
+        <TooltipContent>
+          <p>Git</p>
         </TooltipContent>
       </Tooltip>
     </TooltipProvider>
