@@ -9,106 +9,154 @@ import { Icon } from "@iconify/vue";
 </script>
 
 <template>
-  <div class="mb-10 flex pt-10">
-    <div class="mx-auto">
-      <h1 class="text-6xl font-bold text-white">Skills</h1>
+  <div class="mb-10 flex justify-center">
+    <div class="text-center">
+      <h1 class="text-4xl font-bold text-white md:text-6xl">Skills</h1>
     </div>
   </div>
 
-  <div class="grid grid-cols-3 gap-[30px] text-white basis-1/2">
-    <TooltipProvider class="flex items-center justify-center bg-slate-400">
+  <div
+    class="grid grid-cols-1 gap-4 p-4 mx-4 text-white sm:grid-cols-2 sm:mx-6 md:grid-cols-3 md:mx-10 lg:mx-20 lg:gap-6 lg:p-8"
+  >
+    <TooltipProvider class="flex items-center justify-center">
       <Tooltip>
         <TooltipTrigger
-          ><Icon icon="akar-icons:javascript-fill" class="h-24 w-16 mx-auto"
-        />Javascript</TooltipTrigger>
+          class="rounded-md border-2 border-gray-500 p-4 hover:bg-slate-600"
+        >
+          <Icon
+            icon="akar-icons:javascript-fill"
+            class="mx-auto h-16 w-16 md:h-24 md:w-24"
+          />
+          <span class="mt-2 block text-center">Javascript</span>
+        </TooltipTrigger>
         <TooltipContent>
-          <p>Javascript</p>
+          <p class="text-center">Javascript</p>
         </TooltipContent>
       </Tooltip>
     </TooltipProvider>
     <TooltipProvider class="flex items-center justify-center">
       <Tooltip>
         <TooltipTrigger
-          ><Icon icon="fa6-brands:vuejs" class="h-24 w-16 mx-auto"
-        />Vue Js</TooltipTrigger>
+          class="rounded-md border-2 border-gray-500 p-4 hover:bg-slate-600"
+        >
+          <Icon
+            icon="fa6-brands:vuejs"
+            class="mx-auto h-16 w-16 md:h-24 md:w-24"
+          />
+          <span class="mt-2 block text-center">Vue Js</span>
+        </TooltipTrigger>
         <TooltipContent>
-          <p>Vue Js</p>
+          <p class="text-center">Vue Js</p>
         </TooltipContent>
       </Tooltip>
     </TooltipProvider>
     <TooltipProvider class="flex items-center justify-center">
       <Tooltip>
         <TooltipTrigger
-          ><Icon icon="tabler:brand-nuxt" class="h-24 w-16 mx-auto"
-        />Nuxt Js</TooltipTrigger>
+          class="rounded-md border-2 border-gray-500 p-4 hover:bg-slate-600"
+        >
+          <Icon
+            icon="tabler:brand-nuxt"
+            class="mx-auto h-16 w-16 md:h-24 md:w-24"
+          />
+          <span class="mt-2 block text-center">Nuxt Js</span>
+        </TooltipTrigger>
         <TooltipContent>
-          <p>Nuxt Js</p>
+          <p class="text-center">Nuxt Js</p>
         </TooltipContent>
       </Tooltip>
     </TooltipProvider>
-  </div>
 
-  <div class="my-10 grid grid-cols-3 gap-[30px] text-white">
+    <!-- Second Row -->
     <TooltipProvider class="flex items-center justify-center">
       <Tooltip>
         <TooltipTrigger
-          ><Icon icon="ri:tailwind-css-fill" class="h-24 w-16 mx-auto"
-        />Tailwind CSS</TooltipTrigger>
+          class="rounded-md border-2 border-gray-500 p-4 hover:bg-slate-600"
+        >
+          <Icon
+            icon="ri:tailwind-css-fill"
+            class="mx-auto h-16 w-16 md:h-24 md:w-24"
+          />
+          <span class="mt-2 block text-center">Tailwind CSS</span>
+        </TooltipTrigger>
         <TooltipContent>
-          <p>Tailwind CSS</p>
+          <p class="text-center">Tailwind CSS</p>
         </TooltipContent>
       </Tooltip>
     </TooltipProvider>
     <TooltipProvider class="flex items-center justify-center">
       <Tooltip>
         <TooltipTrigger
-          ><Icon icon="material-symbols:php-sharp" class="h-24 w-16 mx-auto"
-        />PHP</TooltipTrigger>
+          class="rounded-md border-2 border-gray-500 p-4 hover:bg-slate-600"
+        >
+          <Icon
+            icon="material-symbols:php-sharp"
+            class="mx-auto h-16 w-16 md:h-24 md:w-24"
+          />
+          <span class="mt-2 block text-center">PHP</span>
+        </TooltipTrigger>
         <TooltipContent>
-          <p>PHP</p>
+          <p class="text-center">PHP</p>
         </TooltipContent>
       </Tooltip>
     </TooltipProvider>
     <TooltipProvider class="flex items-center justify-center">
       <Tooltip>
         <TooltipTrigger
-          ><Icon icon="simple-icons:laravel" class="h-24 w-16 mx-auto"
-        />Laravel</TooltipTrigger>
+          class="rounded-md border-2 border-gray-500 p-4 hover:bg-slate-600"
+        >
+          <Icon
+            icon="simple-icons:laravel"
+            class="mx-auto h-16 w-16 md:h-24 md:w-24"
+          />
+          <span class="mt-2 block text-center">Laravel</span>
+        </TooltipTrigger>
         <TooltipContent>
-          <p>Laravel</p>
+          <p class="text-center">Laravel</p>
         </TooltipContent>
       </Tooltip>
     </TooltipProvider>
-  </div>
-  
-  <div class="my-10 grid grid-cols-3 gap-[30px] text-white">
+
+    <!-- Third row -->
     <TooltipProvider class="flex items-center justify-center">
       <Tooltip>
         <TooltipTrigger
-          ><Icon icon="file-icons:sqlite" class="h-24 w-16 mx-auto"
-        />SQLite</TooltipTrigger>
+          class="rounded-md border-2 border-gray-500 p-4 hover:bg-slate-600"
+        >
+          <Icon
+            icon="file-icons:sqlite"
+            class="mx-auto h-16 w-16 md:h-24 md:w-24"
+          />
+          <span class="mt-2 block text-center">SQLite</span>
+        </TooltipTrigger>
         <TooltipContent>
-          <p>SQLite</p>
+          <p class="text-center">SQLite</p>
         </TooltipContent>
       </Tooltip>
     </TooltipProvider>
     <TooltipProvider class="flex items-center justify-center">
       <Tooltip>
         <TooltipTrigger
-          ><Icon icon="gg:figma" class="h-24 w-16 mx-auto"
-        />Figma</TooltipTrigger>
+          class="rounded-md border-2 border-gray-500 p-4 hover:bg-slate-600"
+        >
+          <Icon icon="gg:figma" class="mx-auto h-16 w-16 md:h-24 md:w-24" />
+          <span class="mt-2 block text-center">Figma</span>
+        </TooltipTrigger>
         <TooltipContent>
-          <p>Figma</p>
+          <p class="text-center">Figma</p>
         </TooltipContent>
       </Tooltip>
     </TooltipProvider>
     <TooltipProvider class="flex items-center justify-center">
       <Tooltip>
         <TooltipTrigger
-          ><Icon icon="bi:git" class="h-24 w-16 mx-auto"
-        />Git</TooltipTrigger>
+          class="rounded-md border-2 border-gray-500 p-4 hover:bg-slate-600"
+        >
+          <Icon icon="bi:git" class="mx-auto h-16 w-16 md:h-24 md:w-24" />
+          <span class="mt-2 block text-center">Git</span>
+        </TooltipTrigger>
         <TooltipContent>
-          <p>Git</p>
+          <p class="text-center">Git</p>
         </TooltipContent>
       </Tooltip>
     </TooltipProvider>
