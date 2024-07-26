@@ -43,7 +43,7 @@ const events = ref([
         </span>
       </template>
       <template #content="slotProps">
-        <Card class="mt-4">
+        <Card class="mt-4 bg-slate-700">
           <template #title>
             {{ slotProps.item.status }}
           </template>
@@ -75,6 +75,12 @@ const events = ref([
 
     .p-timeline-event-opposite {
       flex: 0;
+    }
+  }
+  ::v-deep {
+    .p-card-body{
+      background-color: #283242;
+      border-radius: 0.50em;
     }
   }
 }
