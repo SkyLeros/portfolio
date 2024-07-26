@@ -76,9 +76,7 @@ const events = ref([
     .p-timeline-event-opposite {
       flex: 0;
     }
-  }
 
-  ::v-deep {
     .p-card-body {
       background-color: #283242;
       border-radius: 0.5em;
