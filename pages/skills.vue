@@ -10,9 +10,12 @@ import { Icon } from "@iconify/vue";
 
 <template>
   <div
-    class="grid grid-cols-1 gap-4 p-4 mx-4 text-white sm:grid-cols-2 sm:mx-6 md:grid-cols-3 md:mx-10 lg:mx-20 lg:gap-6 "
+    class="mx-4 grid grid-cols-1 gap-6 p-4 text-white sm:mx-6 sm:grid-cols-2 md:mx-10 md:grid-cols-3 lg:mx-20 lg:gap-6"
   >
-    <TooltipProvider class="flex items-center justify-center">
+    <TooltipProvider
+      class="flex items-center justify-center"
+      :delayDuration="100"
+    >
       <Tooltip>
         <TooltipTrigger
           class="rounded-md border-2 border-gray-500 p-4 hover:bg-slate-600"
@@ -21,14 +24,19 @@ import { Icon } from "@iconify/vue";
             icon="akar-icons:javascript-fill"
             class="mx-auto h-16 w-16 md:h-24 md:w-24"
           />
-          <span class="mt-2 block text-center">Javascript</span>
+          <span class="mt-2 block text-center font-bold text-blue-500"
+            >Javascript</span
+          >
         </TooltipTrigger>
         <TooltipContent>
           <p class="text-center">Javascript</p>
         </TooltipContent>
       </Tooltip>
     </TooltipProvider>
-    <TooltipProvider class="flex items-center justify-center">
+    <TooltipProvider
+      class="flex items-center justify-center"
+      :delayDuration="100"
+    >
       <Tooltip>
         <TooltipTrigger
           class="rounded-md border-2 border-gray-500 p-4 hover:bg-slate-600"
@@ -37,14 +45,19 @@ import { Icon } from "@iconify/vue";
             icon="fa6-brands:vuejs"
             class="mx-auto h-16 w-16 md:h-24 md:w-24"
           />
-          <span class="mt-2 block text-center">Vue Js</span>
+          <span class="mt-2 block text-center font-bold text-blue-500"
+            >Vue Js</span
+          >
         </TooltipTrigger>
         <TooltipContent>
           <p class="text-center">Vue Js</p>
         </TooltipContent>
       </Tooltip>
     </TooltipProvider>
-    <TooltipProvider class="flex items-center justify-center">
+    <TooltipProvider
+      class="flex items-center justify-center"
+      :delayDuration="100"
+    >
       <Tooltip>
         <TooltipTrigger
           class="rounded-md border-2 border-gray-500 p-4 hover:bg-slate-600"
@@ -53,7 +66,9 @@ import { Icon } from "@iconify/vue";
             icon="tabler:brand-nuxt"
             class="mx-auto h-16 w-16 md:h-24 md:w-24"
           />
-          <span class="mt-2 block text-center">Nuxt Js</span>
+          <span class="mt-2 block text-center font-bold text-blue-500"
+            >Nuxt Js</span
+          >
         </TooltipTrigger>
         <TooltipContent>
           <p class="text-center">Nuxt Js</p>
@@ -62,7 +77,10 @@ import { Icon } from "@iconify/vue";
     </TooltipProvider>
 
     <!-- Second Row -->
-    <TooltipProvider class="flex items-center justify-center">
+    <TooltipProvider
+      class="flex items-center justify-center"
+      :delayDuration="100"
+    >
       <Tooltip>
         <TooltipTrigger
           class="rounded-md border-2 border-gray-500 p-4 hover:bg-slate-600"
@@ -71,14 +89,19 @@ import { Icon } from "@iconify/vue";
             icon="ri:tailwind-css-fill"
             class="mx-auto h-16 w-16 md:h-24 md:w-24"
           />
-          <span class="mt-2 block text-center">Tailwind CSS</span>
+          <span class="mt-2 block text-center font-bold text-blue-500"
+            >Tailwind CSS</span
+          >
         </TooltipTrigger>
         <TooltipContent>
           <p class="text-center">Tailwind CSS</p>
         </TooltipContent>
       </Tooltip>
     </TooltipProvider>
-    <TooltipProvider class="flex items-center justify-center">
+    <TooltipProvider
+      class="flex items-center justify-center"
+      :delayDuration="100"
+    >
       <Tooltip>
         <TooltipTrigger
           class="rounded-md border-2 border-gray-500 p-4 hover:bg-slate-600"
@@ -87,14 +110,19 @@ import { Icon } from "@iconify/vue";
             icon="material-symbols:php-sharp"
             class="mx-auto h-16 w-16 md:h-24 md:w-24"
           />
-          <span class="mt-2 block text-center">PHP</span>
+          <span class="mt-2 block text-center font-bold text-blue-500"
+            >PHP</span
+          >
         </TooltipTrigger>
         <TooltipContent>
           <p class="text-center">PHP</p>
         </TooltipContent>
       </Tooltip>
     </TooltipProvider>
-    <TooltipProvider class="flex items-center justify-center">
+    <TooltipProvider
+      class="flex items-center justify-center"
+      :delayDuration="100"
+    >
       <Tooltip>
         <TooltipTrigger
           class="rounded-md border-2 border-gray-500 p-4 hover:bg-slate-600"
@@ -103,7 +131,9 @@ import { Icon } from "@iconify/vue";
             icon="simple-icons:laravel"
             class="mx-auto h-16 w-16 md:h-24 md:w-24"
           />
-          <span class="mt-2 block text-center">Laravel</span>
+          <span class="mt-2 block text-center font-bold text-blue-500"
+            >Laravel</span
+          >
         </TooltipTrigger>
         <TooltipContent>
           <p class="text-center">Laravel</p>
@@ -112,7 +142,10 @@ import { Icon } from "@iconify/vue";
     </TooltipProvider>
 
     <!-- Third row -->
-    <TooltipProvider class="flex items-center justify-center">
+    <TooltipProvider
+      class="flex items-center justify-center"
+      :delayDuration="100"
+    >
       <Tooltip>
         <TooltipTrigger
           class="rounded-md border-2 border-gray-500 p-4 hover:bg-slate-600"
@@ -121,33 +154,45 @@ import { Icon } from "@iconify/vue";
             icon="file-icons:sqlite"
             class="mx-auto h-16 w-16 md:h-24 md:w-24"
           />
-          <span class="mt-2 block text-center">SQLite</span>
+          <span class="mt-2 block text-center font-bold text-blue-500"
+            >SQLite</span
+          >
         </TooltipTrigger>
         <TooltipContent>
           <p class="text-center">SQLite</p>
         </TooltipContent>
       </Tooltip>
     </TooltipProvider>
-    <TooltipProvider class="flex items-center justify-center">
+    <TooltipProvider
+      class="flex items-center justify-center"
+      :delayDuration="100"
+    >
       <Tooltip>
         <TooltipTrigger
           class="rounded-md border-2 border-gray-500 p-4 hover:bg-slate-600"
         >
           <Icon icon="gg:figma" class="mx-auto h-16 w-16 md:h-24 md:w-24" />
-          <span class="mt-2 block text-center">Figma</span>
+          <span class="mt-2 block text-center font-bold text-blue-500"
+            >Figma</span
+          >
         </TooltipTrigger>
         <TooltipContent>
           <p class="text-center">Figma</p>
         </TooltipContent>
       </Tooltip>
     </TooltipProvider>
-    <TooltipProvider class="flex items-center justify-center">
+    <TooltipProvider
+      class="flex items-center justify-center"
+      :delayDuration="100"
+    >
       <Tooltip>
         <TooltipTrigger
           class="rounded-md border-2 border-gray-500 p-4 hover:bg-slate-600"
         >
           <Icon icon="bi:git" class="mx-auto h-16 w-16 md:h-24 md:w-24" />
-          <span class="mt-2 block text-center">Git</span>
+          <span class="mt-2 block text-center font-bold text-blue-500"
+            >Git</span
+          >
         </TooltipTrigger>
         <TooltipContent>
           <p class="text-center">Git</p>

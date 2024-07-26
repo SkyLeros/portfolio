@@ -4,23 +4,23 @@ import Card from "primevue/card";
 
 const events = ref([
   {
-    status: "Bachelor's Degree of Computer Science (Software Engineering)",
-    date: "2020 Oct - 2024 Nov",
+    status: "Internship at SAINS",
+    date: "2023 Feb - 2023 Aug",
     icon: "pi pi-shopping-cart",
     color: "#3b82f6",
     image: "game-controller.jpg",
     content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae numquam deserunt quisquam repellat libero asperiores earum nam nobis, culpa ratione quam perferendis esse, cupiditate neque quas!",
   },
   {
-    status: "Sijil Tinggi Persekolahan Malaysia (STPM)",
-    date: "2018 Jun - 2019 Nov",
+    status: "Homestay Assistant",
+    date: "2020 Feb - 2020 Mar",
     icon: "pi pi-cog",
     color: "#3b82f6",
     content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae numquam deserunt quisquam repellat libero asperiores earum nam nobis, culpa ratione quam perferendis esse, cupiditate neque quas!",
   },
   {
-    status: "Sijil Pelajaran Malaysia (SPM)",
-    date: "2016 Jan - 2017 Oct",
+    status: "Supermarket Assistant",
+    date: "2018 Jan - 2018 March",
     icon: "pi pi-shopping-cart",
     color: "#3b82f6",
     content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae numquam deserunt quisquam repellat libero asperiores earum nam nobis, culpa ratione quam perferendis esse, cupiditate neque quas!",

@@ -7,7 +7,7 @@ export default defineNuxtConfig({
   modules: [
     "@nuxtjs/tailwindcss",
     "shadcn-nuxt",
-    "@vueuse/nuxt",
+    "@vueuse/motion/nuxt",
     "@primevue/nuxt-module",
   ],
   css: ["~/assets/css/globals.css"],
