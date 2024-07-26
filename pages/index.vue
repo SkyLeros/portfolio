@@ -4,7 +4,7 @@ import { Icon } from "@iconify/vue";
 
 <template>
   <div class="flex min-h-[80vh] flex-col justify-center py-12 xl:px-0">
-    <div class="container mx-auto">
+   <div class="container mx-auto"> 
       <div class="flex flex-col xl:flex-row xl:gap-6">
         <div
           class="order-2 flex w-full flex-col xl:order-none xl:h-[460px] xl:w-[50%] xl:justify-between"

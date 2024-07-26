@@ -33,32 +33,34 @@ const events = ref([
 
 <template>
   <div class="card">
-    <Timeline :value="events" class="customized-timeline mx-10 text-white">
-      <template #marker="slotProps">
-        <span
-          class="flex h-8 w-8 items-center justify-center rounded-full text-white shadow-sm"
-          :style="{ backgroundColor: slotProps.item.color }"
-        >
-          <i :class="slotProps.item.icon"></i>
-        </span>
-      </template>
-      <template #content="slotProps">
-        <Card class="mt-4">
-          <template #title>
-            {{ slotProps.item.status }}
-          </template>
-          <template #subtitle class="bg-purple-700">
-            {{ slotProps.item.date }}
-          </template>
-          <template #content>
-            <p>
-              {{ slotProps.item.content }}
-            </p>
-            <Button label="Read more" text></Button>
-          </template>
-        </Card>
-      </template>
-    </Timeline>
+    <div class="container mx-auto">
+      <Timeline :value="events" class="customized-timeline mx-10 text-white">
+        <template #marker="slotProps">
+          <span
+            class="flex h-8 w-8 items-center justify-center rounded-full text-white shadow-sm"
+            :style="{ backgroundColor: slotProps.item.color }"
+          >
+            <i :class="slotProps.item.icon"></i>
+          </span>
+        </template>
+        <template #content="slotProps">
+          <Card class="mt-4">
+            <template #title>
+              {{ slotProps.item.status }}
+            </template>
+            <template #subtitle class="bg-purple-700">
+              {{ slotProps.item.date }}
+            </template>
+            <template #content>
+              <p>
+                {{ slotProps.item.content }}
+              </p>
+              <Button label="Read more" text></Button>
+            </template>
+          </Card>
+        </template>
+      </Timeline>
+    </div>
   </div>
 </template>
 
