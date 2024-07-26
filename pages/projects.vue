@@ -3,7 +3,7 @@
 <template>
   <div>
     <div>
-      <h1 class="font-extrabold">01</h1>
+      <h1 class="text-4xl font-extrabold text-white">01</h1>
     </div>
     <div></div>
   </div>

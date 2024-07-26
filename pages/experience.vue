@@ -9,21 +9,24 @@ const events = ref([
     icon: "pi pi-shopping-cart",
     color: "#3b82f6",
     image: "game-controller.jpg",
-    content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae numquam deserunt quisquam repellat libero asperiores earum nam nobis, culpa ratione quam perferendis esse, cupiditate neque quas!",
+    content:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae numquam deserunt quisquam repellat libero asperiores earum nam nobis, culpa ratione quam perferendis esse, cupiditate neque quas!",
   },
   {
     status: "Homestay Assistant",
     date: "2020 Feb - 2020 Mar",
     icon: "pi pi-cog",
     color: "#3b82f6",
-    content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae numquam deserunt quisquam repellat libero asperiores earum nam nobis, culpa ratione quam perferendis esse, cupiditate neque quas!",
+    content:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae numquam deserunt quisquam repellat libero asperiores earum nam nobis, culpa ratione quam perferendis esse, cupiditate neque quas!",
   },
   {
     status: "Supermarket Assistant",
     date: "2018 Jan - 2018 March",
     icon: "pi pi-shopping-cart",
     color: "#3b82f6",
-    content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae numquam deserunt quisquam repellat libero asperiores earum nam nobis, culpa ratione quam perferendis esse, cupiditate neque quas!",
+    content:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae numquam deserunt quisquam repellat libero asperiores earum nam nobis, culpa ratione quam perferendis esse, cupiditate neque quas!",
   },
 ]);
 </script>
@@ -33,7 +36,7 @@ const events = ref([
     <Timeline :value="events" class="customized-timeline mx-10 text-white">
       <template #marker="slotProps">
         <span
-          class="flex h-8 w-8 items-center justify-center rounded-full text-white  shadow-sm"
+          class="flex h-8 w-8 items-center justify-center rounded-full text-white shadow-sm"
           :style="{ backgroundColor: slotProps.item.color }"
         >
           <i :class="slotProps.item.icon"></i>

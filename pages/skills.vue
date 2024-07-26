@@ -18,15 +18,13 @@ import { Icon } from "@iconify/vue";
     >
       <Tooltip>
         <TooltipTrigger
-          class="rounded-md border-2 border-gray-500 p-4 hover:bg-slate-600"
+          class="rounded-md border-2 border-gray-500 p-4 hover:border-blue-500 hover:bg-slate-700"
         >
           <Icon
             icon="akar-icons:javascript-fill"
             class="mx-auto h-16 w-16 md:h-24 md:w-24"
           />
-          <span class="mt-2 block text-center font-bold text-blue-500"
-            >Javascript</span
-          >
+          <span class="mt-2 block text-center font-bold">Javascript</span>
         </TooltipTrigger>
         <TooltipContent>
           <p class="text-center">Javascript</p>
@@ -39,15 +37,13 @@ import { Icon } from "@iconify/vue";
     >
       <Tooltip>
         <TooltipTrigger
-          class="rounded-md border-2 border-gray-500 p-4 hover:bg-slate-600"
+          class="rounded-md border-2 border-gray-500 p-4 hover:border-blue-500 hover:bg-slate-700"
         >
           <Icon
             icon="fa6-brands:vuejs"
             class="mx-auto h-16 w-16 md:h-24 md:w-24"
           />
-          <span class="mt-2 block text-center font-bold text-blue-500"
-            >Vue Js</span
-          >
+          <span class="mt-2 block text-center font-bold">Vue Js</span>
         </TooltipTrigger>
         <TooltipContent>
           <p class="text-center">Vue Js</p>
@@ -60,15 +56,13 @@ import { Icon } from "@iconify/vue";
     >
       <Tooltip>
         <TooltipTrigger
-          class="rounded-md border-2 border-gray-500 p-4 hover:bg-slate-600"
+          class="rounded-md border-2 border-gray-500 p-4 hover:border-blue-500 hover:bg-slate-700"
         >
           <Icon
             icon="tabler:brand-nuxt"
             class="mx-auto h-16 w-16 md:h-24 md:w-24"
           />
-          <span class="mt-2 block text-center font-bold text-blue-500"
-            >Nuxt Js</span
-          >
+          <span class="mt-2 block text-center font-bold">Nuxt Js</span>
         </TooltipTrigger>
         <TooltipContent>
           <p class="text-center">Nuxt Js</p>
@@ -83,15 +77,13 @@ import { Icon } from "@iconify/vue";
     >
       <Tooltip>
         <TooltipTrigger
-          class="rounded-md border-2 border-gray-500 p-4 hover:bg-slate-600"
+          class="rounded-md border-2 border-gray-500 p-4 hover:border-blue-500 hover:bg-slate-700"
         >
           <Icon
             icon="ri:tailwind-css-fill"
             class="mx-auto h-16 w-16 md:h-24 md:w-24"
           />
-          <span class="mt-2 block text-center font-bold text-blue-500"
-            >Tailwind CSS</span
-          >
+          <span class="mt-2 block text-center font-bold">Tailwind CSS</span>
         </TooltipTrigger>
         <TooltipContent>
           <p class="text-center">Tailwind CSS</p>
@@ -104,15 +96,13 @@ import { Icon } from "@iconify/vue";
     >
       <Tooltip>
         <TooltipTrigger
-          class="rounded-md border-2 border-gray-500 p-4 hover:bg-slate-600"
+          class="rounded-md border-2 border-gray-500 p-4 hover:border-blue-500 hover:bg-slate-700"
         >
           <Icon
             icon="material-symbols:php-sharp"
             class="mx-auto h-16 w-16 md:h-24 md:w-24"
           />
-          <span class="mt-2 block text-center font-bold text-blue-500"
-            >PHP</span
-          >
+          <span class="mt-2 block text-center font-bold">PHP</span>
         </TooltipTrigger>
         <TooltipContent>
           <p class="text-center">PHP</p>
@@ -125,15 +115,13 @@ import { Icon } from "@iconify/vue";
     >
       <Tooltip>
         <TooltipTrigger
-          class="rounded-md border-2 border-gray-500 p-4 hover:bg-slate-600"
+          class="rounded-md border-2 border-gray-500 p-4 hover:border-blue-500 hover:bg-slate-700"
         >
           <Icon
             icon="simple-icons:laravel"
             class="mx-auto h-16 w-16 md:h-24 md:w-24"
           />
-          <span class="mt-2 block text-center font-bold text-blue-500"
-            >Laravel</span
-          >
+          <span class="mt-2 block text-center font-bold">Laravel</span>
         </TooltipTrigger>
         <TooltipContent>
           <p class="text-center">Laravel</p>
@@ -148,15 +136,13 @@ import { Icon } from "@iconify/vue";
     >
       <Tooltip>
         <TooltipTrigger
-          class="rounded-md border-2 border-gray-500 p-4 hover:bg-slate-600"
+          class="rounded-md border-2 border-gray-500 p-4 hover:border-blue-500 hover:bg-slate-700"
         >
           <Icon
             icon="file-icons:sqlite"
             class="mx-auto h-16 w-16 md:h-24 md:w-24"
           />
-          <span class="mt-2 block text-center font-bold text-blue-500"
-            >SQLite</span
-          >
+          <span class="mt-2 block text-center font-bold">SQLite</span>
         </TooltipTrigger>
         <TooltipContent>
           <p class="text-center">SQLite</p>
@@ -169,12 +155,10 @@ import { Icon } from "@iconify/vue";
     >
       <Tooltip>
         <TooltipTrigger
-          class="rounded-md border-2 border-gray-500 p-4 hover:bg-slate-600"
+          class="rounded-md border-2 border-gray-500 p-4 hover:border-blue-500 hover:bg-slate-700"
         >
           <Icon icon="gg:figma" class="mx-auto h-16 w-16 md:h-24 md:w-24" />
-          <span class="mt-2 block text-center font-bold text-blue-500"
-            >Figma</span
-          >
+          <span class="mt-2 block text-center font-bold">Figma</span>
         </TooltipTrigger>
         <TooltipContent>
           <p class="text-center">Figma</p>
@@ -187,12 +171,10 @@ import { Icon } from "@iconify/vue";
     >
       <Tooltip>
         <TooltipTrigger
-          class="rounded-md border-2 border-gray-500 p-4 hover:bg-slate-600"
+          class="rounded-md border-2 border-gray-500 p-4 hover:border-blue-500 hover:bg-slate-700"
         >
           <Icon icon="bi:git" class="mx-auto h-16 w-16 md:h-24 md:w-24" />
-          <span class="mt-2 block text-center font-bold text-blue-500"
-            >Git</span
-          >
+          <span class="mt-2 block text-center font-bold">Git</span>
         </TooltipTrigger>
         <TooltipContent>
           <p class="text-center">Git</p>
