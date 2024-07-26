@@ -5,7 +5,7 @@ import { Icon } from "@iconify/vue";
 <template>
   <div class="mx-12 my-5 flex flex-col text-white md:flex-row">
     <div class="space-y-5 md:flex-1">
-      <h3>Full-stack developer</h3>
+      <h3>Full-stack Developer</h3>
       <h1 class="text-4xl font-bold">
         Hello, I'm <br /><span class="text-blue-500">Than Ye Hong</span>
       </h1>
