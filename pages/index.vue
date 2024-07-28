@@ -3,19 +3,21 @@ import { Icon } from "@iconify/vue";
 </script>
 
 <template>
-  <div class="flex min-h-[70vh] flex-col justify-center py-12 xl:px-0">
-    <div class="container mx-auto">
-      <div class="flex flex-col xl:flex-row xl:gap-6">
+  <div class="flex min-h-[80vh] flex-col justify-center py-12 xl:px-0">
+    <div class="container mx-auto h-full">
+      <div
+        class="flex flex-col items-center justify-between xl:flex-row xl:gap-6"
+      >
         <div
           class="order-2 flex w-full flex-col xl:order-none xl:h-[460px] xl:w-[50%] xl:justify-between"
         >
-          <div class="flex flex-col gap-[30px] text-white">
-            <h3 class="text-4xl">Full-stack Developer</h3>
-            <h1 class="text-6xl font-bold">
-              Hello, I'm <span class="text-blue-500">Than Ye Hong</span>
+          <div class="gap-[30px] text-center text-white xl:text-left">
+            <h3 class="text-2xl mb-6">Full-stack Developer</h3>
+            <h1 class="mb-6 text-6xl font-bold">
+              Hello, I'm <br /><span class="text-blue-500">Than Ye Hong</span>
             </h1>
-            <p class="text-xl">Brief description of myself goes here...</p>
-            <Button variant="outline" class="mx-auto">
+            <p class="mb-9 text-xl">Brief description of myself goes here...</p>
+            <Button variant="outline" class="flex uppercase items-center gap-2 text-xl rounded-2xl">
               <Icon icon="ic:sharp-download" />Download CV
             </Button>
           </div>
