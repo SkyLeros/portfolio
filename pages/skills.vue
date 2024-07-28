@@ -27,9 +27,6 @@ import { Icon } from "@iconify/vue";
             />
             <span class="mt-2 block text-center font-bold">Javascript</span>
           </TooltipTrigger>
-          <TooltipContent>
-            <p class="text-center">Javascript</p>
-          </TooltipContent>
         </Tooltip>
       </TooltipProvider>
       <TooltipProvider
@@ -46,9 +43,6 @@ import { Icon } from "@iconify/vue";
             />
             <span class="mt-2 block text-center font-bold">Vue Js</span>
           </TooltipTrigger>
-          <TooltipContent>
-            <p class="text-center">Vue Js</p>
-          </TooltipContent>
         </Tooltip>
       </TooltipProvider>
       <TooltipProvider
@@ -65,9 +59,6 @@ import { Icon } from "@iconify/vue";
             />
             <span class="mt-2 block text-center font-bold">Nuxt Js</span>
           </TooltipTrigger>
-          <TooltipContent>
-            <p class="text-center">Nuxt Js</p>
-          </TooltipContent>
         </Tooltip>
       </TooltipProvider>
 
@@ -86,9 +77,6 @@ import { Icon } from "@iconify/vue";
             />
             <span class="mt-2 block text-center font-bold">Tailwind CSS</span>
           </TooltipTrigger>
-          <TooltipContent>
-            <p class="text-center">Tailwind CSS</p>
-          </TooltipContent>
         </Tooltip>
       </TooltipProvider>
       <TooltipProvider
@@ -105,9 +93,6 @@ import { Icon } from "@iconify/vue";
             />
             <span class="mt-2 block text-center font-bold">PHP</span>
           </TooltipTrigger>
-          <TooltipContent>
-            <p class="text-center">PHP</p>
-          </TooltipContent>
         </Tooltip>
       </TooltipProvider>
       <TooltipProvider
@@ -124,9 +109,6 @@ import { Icon } from "@iconify/vue";
             />
             <span class="mt-2 block text-center font-bold">Laravel</span>
           </TooltipTrigger>
-          <TooltipContent>
-            <p class="text-center">Laravel</p>
-          </TooltipContent>
         </Tooltip>
       </TooltipProvider>
 
@@ -145,9 +127,6 @@ import { Icon } from "@iconify/vue";
             />
             <span class="mt-2 block text-center font-bold">SQLite</span>
           </TooltipTrigger>
-          <TooltipContent>
-            <p class="text-center">SQLite</p>
-          </TooltipContent>
         </Tooltip>
       </TooltipProvider>
       <TooltipProvider
@@ -161,9 +140,6 @@ import { Icon } from "@iconify/vue";
             <Icon icon="gg:figma" class="mx-auto h-16 w-16 md:h-24 md:w-24" />
             <span class="mt-2 block text-center font-bold">Figma</span>
           </TooltipTrigger>
-          <TooltipContent>
-            <p class="text-center">Figma</p>
-          </TooltipContent>
         </Tooltip>
       </TooltipProvider>
       <TooltipProvider
@@ -177,9 +153,6 @@ import { Icon } from "@iconify/vue";
             <Icon icon="bi:git" class="mx-auto h-16 w-16 md:h-24 md:w-24" />
             <span class="mt-2 block text-center font-bold">Git</span>
           </TooltipTrigger>
-          <TooltipContent>
-            <p class="text-center">Git</p>
-          </TooltipContent>
         </Tooltip>
       </TooltipProvider>
     </div>

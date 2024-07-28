@@ -3,33 +3,48 @@ import { Icon } from "@iconify/vue";
 </script>
 
 <template>
-  <div class="flex min-h-[80vh] flex-col justify-center py-12 xl:px-0">
+  <div class="flex flex-col justify-center py-12 xl:px-0 md:mx-4">
     <div class="container mx-auto h-full">
       <div
         class="flex flex-col items-center justify-between xl:flex-row xl:gap-6"
       >
         <div
-          class="order-2 flex w-full flex-col xl:order-none xl:h-[460px] xl:w-[50%] xl:justify-between"
+          class="order-2 w-full xl:order-none xl:h-[460px] xl:justify-between"
         >
           <div class="gap-[30px] text-center text-white xl:text-left">
-            <h3 class="text-2xl mb-6">Full-stack Developer</h3>
+            <h3 class="mb-6 text-2xl">Full-stack Developer</h3>
             <h1 class="mb-6 text-6xl font-bold">
               Hello, I'm <br /><span class="text-blue-500">Than Ye Hong</span>
             </h1>
-            <p class="mb-9 text-xl">Brief description of myself goes here...</p>
-            <Button variant="outline" class="flex uppercase items-center gap-2 text-xl rounded-2xl">
-              <Icon icon="ic:sharp-download" />Download CV
-            </Button>
+            <p class="max-width-[500px] mb-9 text-xl text-white/80">
+              Brief description of myself goes here...
+            </p>
+            <div class="flex flex-col items-center gap-4 xl:flex-row">
+              <Button
+                variant="outline"
+                class="flex items-center gap-2 rounded-2xl text-xl uppercase"
+              >
+                <Icon icon="ic:sharp-download" />Download CV
+              </Button>
+              <div class="my-4 flex gap-4 xl:mx-10 xl:my-7 xl:mb-8">
+                <NuxtLink to="/" class="hover:text-blue-500"
+                  ><Icon icon="mdi:linkedin" class="size-12 gap-6"
+                /></NuxtLink>
+                <NuxtLink to="/" class="hover:text-blue-500"
+                  ><Icon icon="mdi:github" class="size-12 gap-6"
+                /></NuxtLink>
+              </div>
+            </div>
           </div>
         </div>
 
-        <div class="w-full xl:w-[50%]">
+        <div class="w-full h-full relative">
           <div class="mb-12 xl:h-[520px]">
             <div class="group relative flex items-center justify-center">
               <img
                 src="~/assets/img/profilepic.jpg"
                 alt="Profile Picture"
-                class="mx-auto w-full max-w-xs rounded-full md:max-w-sm lg:max-w-md"
+                class="w-full max-w-xs rounded-full md:max-w-sm lg:max-w-md object-contain"
               />
             </div>
           </div>
