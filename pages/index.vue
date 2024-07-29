@@ -3,7 +3,10 @@ import { Icon } from "@iconify/vue";
 </script>
 
 <template>
-  <div class="flex flex-col justify-center py-12 xl:px-0 md:mx-4">
+  <div
+    v-motion-fade-visible-once
+    class="flex flex-col justify-center py-12 md:mx-4 xl:px-0"
+  >
     <div class="container mx-auto h-full">
       <div
         class="flex flex-col items-center justify-between xl:flex-row xl:gap-6"
@@ -12,8 +15,8 @@ import { Icon } from "@iconify/vue";
           class="order-2 w-full xl:order-none xl:h-[460px] xl:justify-between"
         >
           <div class="gap-[30px] text-center text-white xl:text-left">
-            <h3 class="mb-6 text-2xl">Full-stack Developer</h3>
-            <h1 class="mb-6 text-6xl font-bold">
+            <h3 class="mb-6 text-xl">Full-stack Developer</h3>
+            <h1 class="mb-6 text-4xl font-bold xl:text-6xl">
               Hello, I'm <br /><span class="text-blue-500">Than Ye Hong</span>
             </h1>
             <p class="max-width-[500px] mb-9 text-xl text-white/80">
@@ -26,25 +29,29 @@ import { Icon } from "@iconify/vue";
               >
                 <Icon icon="ic:sharp-download" />Download CV
               </Button>
-              <div class="my-4 flex gap-4 xl:mx-10 xl:my-7 xl:mb-8">
+              <div class="my-4 flex gap-4 xl:mx-8 xl:my-8 xl:mb-8">
                 <NuxtLink to="/" class="hover:text-blue-500"
-                  ><Icon icon="mdi:linkedin" class="size-12 gap-6"
+                  ><Icon
+                    icon="mdi:linkedin"
+                    class="size-12 gap-6 rounded-full border p-[6px] hover:border-blue-500"
                 /></NuxtLink>
                 <NuxtLink to="/" class="hover:text-blue-500"
-                  ><Icon icon="mdi:github" class="size-12 gap-6"
+                  ><Icon
+                    icon="mdi:github"
+                    class="size-12 gap-6 rounded-full border p-[6px] hover:border-blue-500"
                 /></NuxtLink>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="w-full h-full relative">
+        <div class="relative h-full w-full">
           <div class="mb-12 xl:h-[520px]">
             <div class="group relative flex items-center justify-center">
               <img
                 src="~/assets/img/profilepic.jpg"
                 alt="Profile Picture"
-                class="w-full max-w-xs rounded-full md:max-w-sm lg:max-w-md object-contain"
+                class="w-full max-w-xs rounded-full object-contain md:max-w-sm lg:max-w-md"
               />
             </div>
           </div>

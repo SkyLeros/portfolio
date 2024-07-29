@@ -22,7 +22,7 @@ const events = ref([
   },
   {
     status: "Supermarket Assistant",
-    date: "2018 Jan - 2018 March",
+    date: "2018 Jan - 2018 Mar",
     icon: "pi pi-shopping-cart",
     color: "#3b82f6",
     content:
@@ -32,8 +32,8 @@ const events = ref([
 </script>
 
 <template>
-  <div class="card">
-    <div class="container mx-auto">
+  <div v-motion-fade class="card">
+    <div class="xl:container mx-auto">
       <Timeline :value="events" class="customized-timeline text-white">
         <template #marker="slotProps">
           <span

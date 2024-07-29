@@ -1,7 +1,12 @@
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+import { Icon } from "@iconify/vue";
+</script>
 
 <template>
-  <div class="flex min-h-[70vh] flex-col justify-center py-12 xl:px-0">
+  <div
+    v-motion-fade
+    class="flex min-h-[70vh] flex-col justify-center py-12 xl:px-0"
+  >
     <div class="container mx-auto">
       <div class="flex flex-col xl:flex-row xl:gap-6">
         <div
@@ -29,9 +34,10 @@
             </h3>
             <!-- Project Stack Icons -->
             <ul class="flex gap-4 text-xl text-white">
-              <li>test</li>
-              <li>test</li>
-              <li>test</li>
+              <Icon icon="material-symbols:php-sharp" class="size-12" />
+              <Icon icon="akar-icons:javascript-fill" class="size-12" />
+              <Icon icon="gg:figma" class="size-12" />
+              <Icon icon="bi:git" class="size-12" />
             </ul>
             <!-- Border -->
             <div class="border border-white/20"></div>
@@ -43,13 +49,18 @@
                     as-child
                     class="group flex w-[70px] items-center justify-center rounded-full bg-white/5"
                   >
-                    <Button variant="outline" class="w-[20%]"> Hover </Button>
+                    <Button variant="outline" class="w-[20%]"> Visit </Button>
                   </TooltipTrigger>
                   <TooltipContent>
                     <p>Add to library</p>
                   </TooltipContent>
                 </Tooltip>
               </TooltipProvider>
+              <NuxtLink to="/" class="mx-3 text-white hover:text-blue-500"
+                ><Icon
+                  icon="mdi:github"
+                  class="size-12 gap-6 rounded-full border p-[6px] hover:border-blue-500"
+              /></NuxtLink>
             </div>
           </div>
         </div>
@@ -72,7 +83,7 @@
   </div>
 
   <!-- 2nd Project -->
-  <div class="flex flex-col justify-center xl:px-0">
+  <div v-motion-fade class="my-6 flex flex-col justify-center xl:px-0">
     <div class="container mx-auto">
       <div class="flex flex-col xl:flex-row xl:gap-6">
         <div
@@ -100,9 +111,9 @@
             </h3>
             <!-- Project Stack Icons -->
             <ul class="flex gap-4 text-xl text-white">
-              <li>test</li>
-              <li>test</li>
-              <li>test</li>
+              <Icon icon="material-symbols:php-sharp" class="size-12" />
+              <Icon icon="akar-icons:javascript-fill" class="size-12" />
+              <Icon icon="bi:git" class="size-12" />
             </ul>
             <!-- Border -->
             <div class="border border-white/20"></div>
@@ -114,13 +125,18 @@
                     as-child
                     class="group flex w-[70px] items-center justify-center rounded-full bg-white/5"
                   >
-                    <Button variant="outline" class="w-[20%]"> Hover </Button>
+                    <Button variant="outline" class="w-[20%]"> Visit </Button>
                   </TooltipTrigger>
                   <TooltipContent>
                     <p>Add to library</p>
                   </TooltipContent>
                 </Tooltip>
               </TooltipProvider>
+              <NuxtLink to="/" class="text-white hover:text-blue-500"
+                ><Icon
+                  icon="mdi:github"
+                  class="mx-3 size-12 gap-6 rounded-full border p-[6px] hover:border-blue-500"
+              /></NuxtLink>
             </div>
           </div>
         </div>

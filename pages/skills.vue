@@ -9,7 +9,7 @@ import { Icon } from "@iconify/vue";
 </script>
 
 <template>
-  <div class="container mx-auto">
+  <div v-motion-fade class="container mx-auto">
     <div
       class="mx-4 grid grid-cols-1 gap-6 p-4 text-white sm:mx-6 sm:grid-cols-2 md:mx-10 md:grid-cols-3 lg:mx-20 lg:gap-6"
     >

@@ -1,7 +1,7 @@
 <script lang="ts" setup></script>
 
 <template>
-  <header class="py-8 text-white xl:py-12">
+  <header v-motion-fade class="relative py-8 text-white xl:py-12">
     <div class="container mx-auto flex items-center justify-between">
       <NuxtLink to="/" class="text-4xl font-extrabold"
         >Ye Hong<span class="text-blue-500">.</span>
