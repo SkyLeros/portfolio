@@ -47,7 +47,7 @@ import { Icon } from "@iconify/vue";
       </TooltipProvider>
       <TooltipProvider
         class="flex items-center justify-center"
-        :delayDuration="100"
+        :delayDuration="110"
       >
         <Tooltip>
           <TooltipTrigger
