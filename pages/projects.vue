@@ -103,7 +103,7 @@ import { Icon } from "@iconify/vue";
               PNWX Web Application
             </h2>
             <!-- Project Description -->
-            <h3 class="text-white/60">
+            <h3 class="text-white/50">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
               Inventore sed consequuntur error repudiandae numquam deserunt
               quisquam repellat libero asperiores earum nam nobis, culpa ratione
