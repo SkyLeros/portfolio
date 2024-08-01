@@ -7,7 +7,7 @@ import { Icon } from "@iconify/vue";
     v-motion-fade-visible-once
     class="flex flex-col justify-center py-12 md:mx-4 xl:px-0"
   >
-    <div class="container mx-auto h-full">
+    <div class="container mx-auto h-full bg-[#1e293b]">
       <div
         class="flex flex-col items-center justify-between xl:flex-row xl:gap-6"
       >
