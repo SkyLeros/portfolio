@@ -30,12 +30,16 @@ import { Icon } from "@iconify/vue";
                 <Icon icon="ic:sharp-download" />Download CV
               </Button>
               <div class="my-4 flex gap-4 xl:mx-8 xl:my-8 xl:mb-8">
-                <NuxtLink to="/" class="hover:text-blue-500"
+                <NuxtLink
+                  to="https://www.linkedin.com/in/yehongt/"
+                  class="hover:text-blue-500"
                   ><Icon
                     icon="mdi:linkedin"
                     class="size-12 gap-6 rounded-full border p-[6px] hover:border-blue-500"
                 /></NuxtLink>
-                <NuxtLink to="/" class="hover:text-blue-500"
+                <NuxtLink
+                  to="https://github.com/skyleros"
+                  class="hover:text-blue-500"
                   ><Icon
                     icon="mdi:github"
                     class="size-12 gap-6 rounded-full border p-[6px] hover:border-blue-500"
