@@ -20,7 +20,7 @@ import { Icon } from "@iconify/vue";
               Hello, I'm <br /><span class="text-blue-500">Than Ye Hong</span>
             </h1>
             <p class="max-width-[500px] mb-9 text-xl text-white/80">
-              Brief description of myself goes here....
+              Brief description of myself goes here....x
             </p>
             <div class="flex flex-col items-center gap-4 xl:flex-row">
               <Button
