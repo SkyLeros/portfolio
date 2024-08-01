@@ -33,6 +33,7 @@ import { Icon } from "@iconify/vue";
                 <NuxtLink
                   to="https://www.linkedin.com/in/yehongt/"
                   class="hover:text-blue-500"
+                  target="_blank"
                   ><Icon
                     icon="mdi:linkedin"
                     class="size-12 gap-6 rounded-full border p-[6px] hover:border-blue-500"
@@ -40,6 +41,7 @@ import { Icon } from "@iconify/vue";
                 <NuxtLink
                   to="https://github.com/skyleros"
                   class="hover:text-blue-500"
+                  target="_blank"
                   ><Icon
                     icon="mdi:github"
                     class="size-12 gap-6 rounded-full border p-[6px] hover:border-blue-500"

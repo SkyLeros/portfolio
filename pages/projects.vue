@@ -51,9 +51,6 @@ import { Icon } from "@iconify/vue";
                   >
                     <Button variant="outline" class="w-[20%]"> Visit </Button>
                   </TooltipTrigger>
-                  <TooltipContent>
-                    <p>Add to library</p>
-                  </TooltipContent>
                 </Tooltip>
               </TooltipProvider>
               <NuxtLink to="/" class="mx-3 text-white hover:text-blue-500"
@@ -127,9 +124,6 @@ import { Icon } from "@iconify/vue";
                   >
                     <Button variant="outline" class="w-[20%]"> Visit </Button>
                   </TooltipTrigger>
-                  <TooltipContent>
-                    <p>Add to library</p>
-                  </TooltipContent>
                 </Tooltip>
               </TooltipProvider>
               <NuxtLink to="/" class="text-white hover:text-blue-500"

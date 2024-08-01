@@ -1,5 +1,17 @@
+<script setup lang="ts">
+useHead({
+  title: "Ye Hong | Portfolio",
+  meta: [
+    {
+      name: "description",
+      content: "This is Ye Hong's portfolio site. Welcome!",
+    },
+  ],
+});
+</script>
+
 <template>
-	<NuxtLayout>
-		<NuxtPage />
-	</NuxtLayout>
+  <NuxtLayout>
+    <NuxtPage />
+  </NuxtLayout>
 </template>
