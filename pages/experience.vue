@@ -12,15 +12,15 @@ const events = ref([
       "• Leveraged internal design documentation to ensure consistency and adherence to standards in website layouts and interfaces. \n• Applied AI tools to speed up the design process significantly reducing time and increasing efficiency. \n• Utilized Evolus Pencil Project to create professional mockups, enhancing design quality and stakeholder communication.",
   },
   {
-    company: "Beacon Homestay",
+    company: "Beacon Backpackers Kuching",
     position: "Hospitality Assistant",
     date: "2020 Feb - 2020 Mar",
     color: "#3b82f6",
     content:
-      "• Maintained cleanliness and organization of hostel rooms and common areas, ensuring a welcoming and hygienic environment for guests. \n• Provided good customer service by taking orders, serving dishes, and managing the cashier, enhancing the overall guest experience. \n• Promoted and advertised the homestay through various channels, successfully increasing bookings and improving occupancy rates.",
+      "• Maintained cleanliness and organization of homestay rooms and common areas, ensuring a welcoming and hygienic environment for guests. \n• Provided good customer service by taking orders, serving dishes, and managing the cashier, enhancing the overall guest experience. \n• Promoted and advertised the homestay through various channels, successfully increasing bookings and improving occupancy rates.",
   },
   {
-    company: "CS Mart",
+    company: "CS Mart Sdn Bhd.",
     position: "Courtesy Clerk",
     date: "2018 Jan - 2018 Mar",
     color: "#3b82f6",

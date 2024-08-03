@@ -15,8 +15,8 @@ import { Icon } from "@iconify/vue";
           class="order-2 w-full xl:order-none xl:h-[460px] xl:justify-between"
         >
           <div class="gap-[30px] text-center text-white xl:text-left">
-            <h3 class="mb-6 text-xl">Full-stack Developer</h3>
-            <h1 class="mb-6 text-4xl font-bold xl:text-6xl">
+            <h3 class="mb-6 text-2xl">Full-stack Developer</h3>
+            <h1 class="mb-6 text-6xl font-bold xl:text-6xl">
               Hello, I'm <br /><span class="text-blue-500">Than Ye Hong</span>
             </h1>
             <p class="max-width-[500px] mb-9 text-xl text-white/80">

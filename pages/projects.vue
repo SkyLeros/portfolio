@@ -16,7 +16,7 @@ import { Icon } from "@iconify/vue";
           <div class="flex flex-col gap-[30px]">
             <!-- Project No.  -->
             <h1
-              class="text-outline text-8xl font-extrabold leading-none text-white"
+              class="text-outline text-8xl font-extrabold leading-none text-blue-500"
             >
               01
             </h1>
@@ -89,7 +89,7 @@ import { Icon } from "@iconify/vue";
   </div>
 
   <!-- 2nd Project -->
-  <div v-motion-fade class="my-6 flex flex-col justify-center xl:px-0">
+  <div v-motion-fade class="my-10 flex flex-col justify-center xl:px-0">
     <div class="container mx-auto">
       <div class="flex flex-col xl:flex-row xl:gap-6">
         <div
@@ -98,7 +98,7 @@ import { Icon } from "@iconify/vue";
           <div class="flex flex-col gap-[30px]">
             <!-- Project No.  -->
             <h1
-              class="text-outline text-8xl font-extrabold leading-none text-white"
+              class="text-outline text-8xl font-extrabold leading-none text-blue-500"
             >
               02
             </h1>
@@ -106,7 +106,7 @@ import { Icon } from "@iconify/vue";
             <h2
               class="group:hover:text-accent text-[42px] font-bold capitalize leading-none text-white transition-all duration-500"
             >
-              Pacific Northwest X-Ray (PNWX) E-commerce Web Appllication
+              Pacific Northwest X-Ray (PNWX) E-commerce Web Application
             </h2>
             <!-- Project Description -->
             <h3 class="text-white/60">
@@ -174,7 +174,7 @@ import { Icon } from "@iconify/vue";
   </div>
 
   <!-- Third Project -->
-  <div v-motion-fade class="my-6 flex flex-col justify-center xl:px-0">
+  <div v-motion-fade class="my-10 flex flex-col justify-center xl:px-0">
     <div class="container mx-auto">
       <div class="flex flex-col xl:flex-row xl:gap-6">
         <div
@@ -183,7 +183,7 @@ import { Icon } from "@iconify/vue";
           <div class="flex flex-col gap-[30px]">
             <!-- Project No.  -->
             <h1
-              class="text-outline text-8xl font-extrabold leading-none text-white"
+              class="text-outline text-8xl font-extrabold leading-none text-blue-500"
             >
               03
             </h1>
@@ -195,7 +195,7 @@ import { Icon } from "@iconify/vue";
             </h2>
             <!-- Project Description -->
             <h3 class="text-white/60">
-              The Health Diary Application is a comprehensive Java-based
+              Health Diary Application is a comprehensive Java-based
               solution designed for tracking and managing health metrics.
               Developed as part of a university course on Java Programming, this
               application enables users to calculate their Body Mass Index
@@ -218,7 +218,6 @@ import { Icon } from "@iconify/vue";
                     as-child
                     class="group flex w-[70px] items-center justify-center rounded-full bg-white/5"
                   >
-                    <Button variant="outline" class="w-[20%]"> Visit </Button>
                   </TooltipTrigger>
                 </Tooltip>
               </TooltipProvider>
