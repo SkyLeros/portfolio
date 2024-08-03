@@ -20,11 +20,11 @@ import { Icon } from "@iconify/vue";
               Hello, I'm <br /><span class="text-blue-500">Than Ye Hong</span>
             </h1>
             <p class="max-width-[500px] mb-9 text-xl text-white/80">
-              Full Stack Web Developer specializing in creating impactful,
+              A Full Stack Web Developer specializing in creating impactful,
               user-friendly websites and applications. Expertise in the latest
-              web technologies for rapid and efficient development while also
-              valuing proven established technologies for their stability and
-              reliability.
+              web technologies prioritise on rapid and efficient development
+              while also valuing proven established technologies for their
+              stability and reliability.
             </p>
             <div class="flex flex-col items-center gap-4 xl:flex-row">
               <Button
