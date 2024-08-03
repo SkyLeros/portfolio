@@ -4,58 +4,62 @@ import Card from "primevue/card";
 
 const events = ref([
   {
-    status: "Internship at SAINS",
+    company: "Sarawak Information Systems (SAINS)",
+    position: "UX Designer Intern",
     date: "2023 Feb - 2023 Aug",
-    icon: "pi pi-shopping-cart",
     color: "#3b82f6",
-    image: "game-controller.jpg",
     content:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae numquam deserunt quisquam repellat libero asperiores earum nam nobis, culpa ratione quam perferendis esse, cupiditate neque quas!",
+      "• Leveraged internal design documentation to ensure consistency and adherence to standards in website layouts and interfaces. \n• Applied AI tools to speed up the design process significantly reducing time and increasing efficiency. \n• Utilized Evolus Pencil Project to create professional mockups, enhancing design quality and stakeholder communication.",
   },
   {
-    status: "Homestay Assistant",
+    company: "Beacon Homestay",
+    position: "Hospitality Assistant",
     date: "2020 Feb - 2020 Mar",
-    icon: "pi pi-cog",
     color: "#3b82f6",
     content:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae numquam deserunt quisquam repellat libero asperiores earum nam nobis, culpa ratione quam perferendis esse, cupiditate neque quas!",
+      "• Maintained cleanliness and organization of hostel rooms and common areas, ensuring a welcoming and hygienic environment for guests. \n• Provided good customer service by taking orders, serving dishes, and managing the cashier, enhancing the overall guest experience. \n• Promoted and advertised the homestay through various channels, successfully increasing bookings and improving occupancy rates.",
   },
   {
-    status: "Supermarket Assistant",
+    company: "CS Mart",
+    position: "Courtesy Clerk",
     date: "2018 Jan - 2018 Mar",
-    icon: "pi pi-shopping-cart",
     color: "#3b82f6",
     content:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae numquam deserunt quisquam repellat libero asperiores earum nam nobis, culpa ratione quam perferendis esse, cupiditate neque quas!",
+      "• Assisted customers with bagging groceries and carrying items to their vehicles, ensuring a pleasant shopping experience. \n• Helped restock shelves and maintain product displays, contributing to an organized and visually appealing store layout. \n• Supported cashiers by managing the flow of customers and reducing wait times at checkout.",
   },
 ]);
 </script>
 
 <template>
   <div v-motion-fade class="card">
-    <div class="xl:container mx-auto">
+    <div class="mx-auto xl:container">
       <Timeline :value="events" class="customized-timeline text-white">
         <template #marker="slotProps">
           <span
-            class="flex h-8 w-8 items-center justify-center rounded-full text-white shadow-sm"
+            class="h-8 w-8 rounded-full"
             :style="{ backgroundColor: slotProps.item.color }"
           >
-            <i :class="slotProps.item.icon"></i>
           </span>
         </template>
         <template #content="slotProps">
-          <Card class="mt-4 bg-slate-700">
+          <Card class="mb-8 mt-4">
             <template #title>
-              {{ slotProps.item.status }}
+              <span class="text-2xl text-green-400"
+                >{{ slotProps.item.company }}<br />
+              </span>
+              <span class="text-white/90">
+                {{ slotProps.item.position }}
+              </span>
             </template>
-            <template #subtitle class="bg-purple-700">
+            <template #subtitle>
               {{ slotProps.item.date }}
             </template>
             <template #content>
-              <p>
-                {{ slotProps.item.content }}
-              </p>
-              <Button label="Read more" text></Button>
+              <ul>
+                <li
+                  v-html="slotProps.item.content.replace(/\n/g, '<br><br>')"
+                ></li>
+              </ul>
             </template>
           </Card>
         </template>

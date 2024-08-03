@@ -44,7 +44,7 @@ const events = ref([
           </span>
         </template>
         <template #content="slotProps">
-          <Card class="mt-4">
+          <Card class="mt-4 mb-8">
             <template #title>
               {{ slotProps.item.status }}
             </template>
