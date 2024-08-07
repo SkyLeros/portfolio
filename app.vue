@@ -1,6 +1,6 @@
 <script setup lang="ts">
 useHead({
-  title: "Ye Hong | Portfolio",
+  title: "Than Ye Hong | Portfolio",
   meta: [
     {
       name: "description",
