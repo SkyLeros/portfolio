@@ -10,6 +10,9 @@ import { Icon } from "@iconify/vue";
 
 <template>
   <div v-motion-fade class="container mx-auto">
+    <div class="mb-5 gap-4 text-center">
+      <h1 class="text-4xl lg:text-5xl font-extrabold text-blue-500">Skills</h1>
+    </div>
     <div
       class="mx-4 grid grid-cols-1 gap-6 p-4 text-white sm:mx-6 sm:grid-cols-2 md:mx-10 md:grid-cols-3 lg:mx-20 lg:gap-6"
     >
@@ -122,23 +125,10 @@ import { Icon } from "@iconify/vue";
             class="rounded-md border-2 border-gray-500 p-4 hover:border-blue-500 hover:bg-slate-700"
           >
             <Icon
-              icon="file-icons:sqlite"
+              icon="devicon-plain:mysql-wordmark"
               class="mx-auto h-16 w-16 md:h-24 md:w-24"
             />
-            <span class="mt-2 block text-center font-bold">SQLite</span>
-          </TooltipTrigger>
-        </Tooltip>
-      </TooltipProvider>
-      <TooltipProvider
-        class="flex items-center justify-center"
-        :delayDuration="100"
-      >
-        <Tooltip>
-          <TooltipTrigger
-            class="rounded-md border-2 border-gray-500 p-4 hover:border-blue-500 hover:bg-slate-700"
-          >
-            <Icon icon="gg:figma" class="mx-auto h-16 w-16 md:h-24 md:w-24" />
-            <span class="mt-2 block text-center font-bold">Figma</span>
+            <span class="mt-2 block text-center font-bold">MySQL</span>
           </TooltipTrigger>
         </Tooltip>
       </TooltipProvider>
@@ -152,6 +142,19 @@ import { Icon } from "@iconify/vue";
           >
             <Icon icon="bi:git" class="mx-auto h-16 w-16 md:h-24 md:w-24" />
             <span class="mt-2 block text-center font-bold">Git</span>
+          </TooltipTrigger>
+        </Tooltip>
+      </TooltipProvider>
+      <TooltipProvider
+        class="flex items-center justify-center"
+        :delayDuration="100"
+      >
+        <Tooltip>
+          <TooltipTrigger
+            class="rounded-md border-2 border-gray-500 p-4 hover:border-blue-500 hover:bg-slate-700"
+          >
+            <Icon icon="gg:figma" class="mx-auto h-16 w-16 md:h-24 md:w-24" />
+            <span class="mt-2 block text-center font-bold">Figma</span>
           </TooltipTrigger>
         </Tooltip>
       </TooltipProvider>

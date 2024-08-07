@@ -33,6 +33,9 @@ const events = ref([
 <template>
   <div v-motion-fade class="card">
     <div class="mx-auto xl:container">
+      <div class="mb-5 gap-4 text-center">
+        <h1 class="text-4xl lg:text-5xl font-extrabold text-blue-500">Education</h1>
+      </div>
       <Timeline :value="events" class="customized-timeline text-white">
         <template #marker="slotProps">
           <span

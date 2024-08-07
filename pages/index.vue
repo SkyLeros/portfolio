@@ -15,11 +15,16 @@ import { Icon } from "@iconify/vue";
           class="order-2 w-full xl:order-none xl:h-[460px] xl:justify-between"
         >
           <div class="gap-[30px] text-center text-white xl:text-left">
-            <h3 class="mb-6 text-2xl">Full-stack Developer</h3>
-            <h1 class="mb-6 text-6xl font-bold xl:text-6xl">
-              Hello, I'm <br /><span class="text-blue-500">Than Ye Hong</span>
+            <h3 class="mb-6 text-2xl">
+              Full-stack Developer | Software Engineer
+            </h3>
+            <h1 class="mb-6 text-[32px] font-bold xl:text-6xl xl:text-[52px]">
+              Hello, I'm <br /><span
+                class="text-[42px] text-blue-500 lg:text-[60px]"
+                >Than Ye Hong</span
+              >
             </h1>
-            <p class="max-width-[500px] mb-9 text-xl text-white/80">
+            <p class="max-width-[500px] mb-9 text-lg text-white/80">
               A Full Stack Web Developer specializing in creating impactful,
               user-friendly websites and applications. Expertise in the latest
               web technologies prioritise on rapid and efficient development
@@ -27,12 +32,17 @@ import { Icon } from "@iconify/vue";
               stability and reliability.
             </p>
             <div class="flex flex-col items-center gap-4 xl:flex-row">
-              <Button
-                variant="outline"
-                class="flex items-center gap-2 rounded-2xl text-xl uppercase"
+              <NuxtLink
+                to="https://storage.rxresu.me/clzayybok5qymvrn30lxwolft/resumes/Than%20Ye%20Hong%20-%20Resume.pdf"
+                target="_blank"
               >
-                <Icon icon="ic:sharp-download" />Download CV
-              </Button>
+                <Button
+                  variant="outline"
+                  class="flex items-center gap-2 rounded-2xl text-xl uppercase"
+                >
+                  <Icon icon="ic:sharp-download" />Resume
+                </Button>
+              </NuxtLink>
               <div class="my-4 flex gap-4 xl:mx-8 xl:my-8 xl:mb-8">
                 <NuxtLink
                   to="https://www.linkedin.com/in/yehongt/"
@@ -55,13 +65,13 @@ import { Icon } from "@iconify/vue";
           </div>
         </div>
 
-        <div class="relative h-full w-full">
-          <div class="mb-12 xl:h-[520px]">
+        <div class="relative mb-6 h-full w-full">
+          <div class="xl:h-[550px]">
             <div class="group relative flex items-center justify-center">
               <img
                 src="~/assets/img/profilepic.jpg"
                 alt="Profile Picture"
-                class="w-full max-w-xs rounded-full object-contain md:max-w-sm lg:max-w-md"
+                class="w-full max-w-xs rounded-full object-contain md:max-w-sm lg:max-w-md xl:my-10 xl:max-w-lg"
               />
             </div>
           </div>
