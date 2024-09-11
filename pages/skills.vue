@@ -6,6 +6,27 @@ import {
   TooltipTrigger,
 } from "@/components/ui/tooltip";
 import { Icon } from "@iconify/vue";
+
+interface Skill {
+  icon: string;
+  name: string;
+  description?: string;
+}
+
+const skills: Skill[] = [
+  { icon: "akar-icons:javascript-fill", name: "Javascript", description: "Versatile programming language for web development" },
+  { icon: "akar-icons:typescript-fill", name: "Typescript", description: "Typed superset of JavaScript" },
+  { icon: "fa6-brands:vuejs", name: "Vue Js", description: "Progressive JavaScript framework" },
+  { icon: "tabler:brand-nuxt", name: "Nuxt Js", description: "Vue.js framework for building web applications" },
+  { icon: "material-symbols:php-sharp", name: "PHP", description: "Server-side scripting language" },
+  { icon: "simple-icons:laravel", name: "Laravel", description: "PHP web application framework" },
+  { icon: "ri:tailwind-css-fill", name: "Tailwind CSS", description: "Utility-first CSS framework" },
+  { icon: "devicon-plain:mysql-wordmark", name: "MySQL", description: "Open-source relational database management system" },
+  { icon: "simple-icons:sqlite", name: "SQLite", description: "Lightweight, serverless database engine" },
+  { icon: "bi:git", name: "Git", description: "Distributed version control system" },
+  { icon: "uil:docker", name: "Docker", description: "Platform for developing, shipping, and running applications" },
+  { icon: "gg:figma", name: "Figma", description: "Collaborative interface design tool" },
+];
 </script>
 
 <template>
@@ -17,6 +38,8 @@ import { Icon } from "@iconify/vue";
       class="mx-4 grid grid-cols-1 gap-6 p-4 text-white sm:mx-6 sm:grid-cols-2 md:mx-10 md:grid-cols-3 lg:mx-20 lg:gap-6"
     >
       <TooltipProvider
+        v-for="skill in skills"
+        :key="skill.name"
         class="flex items-center justify-center"
         :delayDuration="100"
       >
@@ -25,184 +48,14 @@ import { Icon } from "@iconify/vue";
             class="rounded-md border-2 border-gray-500 p-4 hover:border-blue-500 hover:bg-slate-700"
           >
             <Icon
-              icon="akar-icons:javascript-fill"
+              :icon="skill.icon"
               class="mx-auto h-16 w-16 md:h-24 md:w-24"
             />
-            <span class="mt-2 block text-center font-bold">Javascript</span>
+            <span class="mt-2 block text-center font-bold">{{ skill.name }}</span>
           </TooltipTrigger>
-        </Tooltip>
-      </TooltipProvider>
-      <TooltipProvider
-        class="flex items-center justify-center"
-        :delayDuration="100"
-      >
-        <Tooltip>
-          <TooltipTrigger
-            class="rounded-md border-2 border-gray-500 p-4 hover:border-blue-500 hover:bg-slate-700"
-          >
-            <Icon
-              icon="akar-icons:typescript-fill"
-              class="mx-auto h-16 w-16 md:h-24 md:w-24"
-            />
-            <span class="mt-2 block text-center font-bold">Typescript</span>
-          </TooltipTrigger>
-        </Tooltip>
-      </TooltipProvider>
-      <TooltipProvider
-        class="flex items-center justify-center"
-        :delayDuration="100"
-      >
-        <Tooltip>
-          <TooltipTrigger
-            class="rounded-md border-2 border-gray-500 p-4 hover:border-blue-500 hover:bg-slate-700"
-          >
-            <Icon
-              icon="fa6-brands:vuejs"
-              class="mx-auto h-16 w-16 md:h-24 md:w-24"
-            />
-            <span class="mt-2 block text-center font-bold">Vue Js</span>
-          </TooltipTrigger>
-        </Tooltip>
-      </TooltipProvider>
-
-      <!-- Second Row -->
-      <TooltipProvider
-        class="flex items-center justify-center"
-        :delayDuration="110"
-      >
-        <Tooltip>
-          <TooltipTrigger
-            class="rounded-md border-2 border-gray-500 p-4 hover:border-blue-500 hover:bg-slate-700"
-          >
-            <Icon
-              icon="tabler:brand-nuxt"
-              class="mx-auto h-16 w-16 md:h-24 md:w-24"
-            />
-            <span class="mt-2 block text-center font-bold">Nuxt Js</span>
-          </TooltipTrigger>
-        </Tooltip>
-      </TooltipProvider>
-      <TooltipProvider
-        class="flex items-center justify-center"
-        :delayDuration="100"
-      >
-        <Tooltip>
-          <TooltipTrigger
-            class="rounded-md border-2 border-gray-500 p-4 hover:border-blue-500 hover:bg-slate-700"
-          >
-            <Icon
-              icon="material-symbols:php-sharp"
-              class="mx-auto h-16 w-16 md:h-24 md:w-24"
-            />
-            <span class="mt-2 block text-center font-bold">PHP</span>
-          </TooltipTrigger>
-        </Tooltip>
-      </TooltipProvider>
-      <TooltipProvider
-        class="flex items-center justify-center"
-        :delayDuration="100"
-      >
-        <Tooltip>
-          <TooltipTrigger
-            class="rounded-md border-2 border-gray-500 p-4 hover:border-blue-500 hover:bg-slate-700"
-          >
-            <Icon
-              icon="simple-icons:laravel"
-              class="mx-auto h-16 w-16 md:h-24 md:w-24"
-            />
-            <span class="mt-2 block text-center font-bold">Laravel</span>
-          </TooltipTrigger>
-        </Tooltip>
-      </TooltipProvider>
-
-      <!-- Third row -->
-      <TooltipProvider
-        class="flex items-center justify-center"
-        :delayDuration="100"
-      >
-        <Tooltip>
-          <TooltipTrigger
-            class="rounded-md border-2 border-gray-500 p-4 hover:border-blue-500 hover:bg-slate-700"
-          >
-            <Icon
-              icon="ri:tailwind-css-fill"
-              class="mx-auto h-16 w-16 md:h-24 md:w-24"
-            />
-            <span class="mt-2 block text-center font-bold">Tailwind CSS</span>
-          </TooltipTrigger>
-        </Tooltip>
-      </TooltipProvider>
-      <TooltipProvider
-        class="flex items-center justify-center"
-        :delayDuration="100"
-      >
-        <Tooltip>
-          <TooltipTrigger
-            class="rounded-md border-2 border-gray-500 p-4 hover:border-blue-500 hover:bg-slate-700"
-          >
-            <Icon
-              icon="devicon-plain:mysql-wordmark"
-              class="mx-auto h-16 w-16 md:h-24 md:w-24"
-            />
-            <span class="mt-2 block text-center font-bold">MySQL</span>
-          </TooltipTrigger>
-        </Tooltip>
-      </TooltipProvider>
-      <TooltipProvider
-        class="flex items-center justify-center"
-        :delayDuration="100"
-      >
-        <Tooltip>
-          <TooltipTrigger
-            class="rounded-md border-2 border-gray-500 p-4 hover:border-blue-500 hover:bg-slate-700"
-          >
-            <Icon
-              icon="simple-icons:sqlite"
-              class="mx-auto h-16 w-16 md:h-24 md:w-24"
-            />
-            <span class="mt-2 block text-center font-bold">SQLite</span>
-          </TooltipTrigger>
-        </Tooltip>
-      </TooltipProvider>
-
-      <!-- Fourth row -->
-      <TooltipProvider
-        class="flex items-center justify-center"
-        :delayDuration="100"
-      >
-        <Tooltip>
-          <TooltipTrigger
-            class="rounded-md border-2 border-gray-500 p-4 hover:border-blue-500 hover:bg-slate-700"
-          >
-            <Icon icon="bi:git" class="mx-auto h-16 w-16 md:h-24 md:w-24" />
-            <span class="mt-2 block text-center font-bold">Git</span>
-          </TooltipTrigger>
-        </Tooltip>
-      </TooltipProvider>
-      <TooltipProvider
-        class="flex items-center justify-center"
-        :delayDuration="100"
-      >
-        <Tooltip>
-          <TooltipTrigger
-            class="rounded-md border-2 border-gray-500 p-4 hover:border-blue-500 hover:bg-slate-700"
-          >
-            <Icon icon="uil:docker" class="mx-auto h-16 w-16 md:h-24 md:w-24" />
-            <span class="mt-2 block text-center font-bold">Docker</span>
-          </TooltipTrigger>
-        </Tooltip>
-      </TooltipProvider>
-      <TooltipProvider
-        class="flex items-center justify-center"
-        :delayDuration="100"
-      >
-        <Tooltip>
-          <TooltipTrigger
-            class="rounded-md border-2 border-gray-500 p-4 hover:border-blue-500 hover:bg-slate-700"
-          >
-            <Icon icon="gg:figma" class="mx-auto h-16 w-16 md:h-24 md:w-24" />
-            <span class="mt-2 block text-center font-bold">Figma</span>
-          </TooltipTrigger>
+          <TooltipContent v-if="skill.description">
+            <p>{{ skill.description }}</p>
+          </TooltipContent>
         </Tooltip>
       </TooltipProvider>
     </div>
