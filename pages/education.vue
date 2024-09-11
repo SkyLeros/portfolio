@@ -1,7 +1,6 @@
 <script lang="ts" setup>
 import Timeline from "primevue/timeline";
 import Card from "primevue/card";
-
 const events = ref([
   {
     company: "Bachelor of Software Engineering with Honours",
